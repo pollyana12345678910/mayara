@@ -1,118 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Tropicália</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do Milho à Pipoca</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class=" p-5">
+  <header>
+    <h1>Do Milho à Pipoca</h1>
+    <p>A jornada do milho até virar pipoca vendida nas cidades</p>
+  </header>
+  <nav>
+    <a href="#milho">Sobre o Milho</a>
+    <a href="#cultivo">Cultivo</a>
+    <a href="#pipoca">Pipoca</a>
+    <a href="#venda">Venda</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-        <nav class="container d-flex justify-content-between align-items-center">
-            <img src="img/images (2).jpeg" alt="Logotipo da Tropicália" class="nav-img " loading="lazy">
-            <ul class="nav mt-5">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>          
-            <div id="acessibilidade">
-                <button id="botao-acessibilidade" class="btn btn-primary fw-bold">acessibilidade</button>
-            <div id="opcoes-acessibilidade">
-                <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
-                <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
-            </div>
-            </div>    
-        </nav>
-       
-    </header>
+  <section id="milho">
+    <h2>Sobre o Milho</h2>
+    <p>O milho, conhecido cientificamente como <em>Zea mays</em>, é um dos cereais mais importantes do mundo, originário da América Central.</p>
+    <p>Ele é usado na alimentação humana, ração animal, produção de óleo, amido, e também como pipoca!</p>
+  </section>
 
+  <section id="cultivo">
+    <h2>Cultivo e Colheita</h2>
+    <p>O milho precisa de solo fértil, bem drenado e clima quente. O processo vai do preparo do solo ao armazenamento do milho seco em silos ou sacos.</p>
+  </section>
 
-    <main class="container my-5">
+  <section id="pipoca">
+    <h2>Transformação em Pipoca</h2>
+    <p>O milho-pipoca possui casca dura e umidade interna. Ao aquecer, ele explode, formando a pipoca que todos amam.</p>
+    <p>Sabores incluem: natural, manteiga, doce, caramelo e muito mais.</p>
+  </section>
 
-        <section id="inicio" class="my-5">
-            <div class="inicio-fundo d-flex justify-content-between align-items-center">
-                <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                    <img src="img/logo-2.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563"
-                        height="278" loading="lazy">
-                    <a href="#tropicalia"
-                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
-                        conhecer!</a>
-                </div>
-<img src="img/lossy-page1-640px-Os_Mutantes.tif (1).png" class=" img-fluid img-inicio" Alt="A imagem em preto e branco mostra três músicos no palco: um homem tocando guitarra, uma mulher com um instrumento de percussão e outra pessoa cantando. A foto remete aos anos 1960 e é uma representação do grupo Os Mutantes " Title=" os-mutantes - CCO / ACERVO NACIONAL">
+  <section id="venda">
+    <h2>Venda nas Cidades</h2>
+    <p>A pipoca é vendida em carrinhos, mercados e eventos. É um negócio de baixo custo e alta margem de lucro.</p>
+    <p>Dicas: escolha locais movimentados, ofereça opções variadas e cuide da higiene.</p>
+  </section>
 
-            </div>
-        </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
-            <div class="container d-flex align-items-center ">
-                  <div class="col-5">
-                    <h2>O que foi a Tropicália?</h2>
-                    <p class="p-2">O movimento Tropicalista, ou Tropicália, foi um dos mais importantes movimentos culturais do Brasil nas décadas de 1960 e 1970, mesclando música, arte, teatro e comportamento. Surgiu como uma reação à ditadura militar e aos padrões culturais e musicais tradicionais, buscando integrar influências modernas, como o rock e a música experimental, com a riqueza da cultura brasileira, como o samba e o baião. Artistas como Caetano Veloso, Gilberto Gil, Gal Costa e Os Mutantes foram figuras centrais desse movimento que também promovia a quebra de normas estéticas e políticas. A Tropicalia se caracterizou pela fusão de elementos de cultura pop e de raízes brasileiras, utilizando a ironia e a crítica social. Fonte: Site O Globo
-                </div>
-            </div>
-        </section>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
 
-        <section id="galeria">
-            <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container p-3 mt-3 fundo-galeria ">
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
-                            loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
-                    <h2 class="mb-3">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu email">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar
-                                mensagem</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="text-center p-3 fst-italic">
-        <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
-    </footer>
-<script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Do Milho à Pipoca. Todos os direitos reservados.</p>
+  </footer>
 </body>
-
 </html>
